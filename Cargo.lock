@@ -8,6 +8,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "aoc-next",
+ "assert2",
  "indoc",
  "num",
  "pretty_assertions",
@@ -28,6 +29,29 @@ checksum = "9bce657832b18f04348b44fc24fed619510b562b85d374c9d47640d55fcbba7d"
 dependencies = [
  "anyhow",
  "reqwest",
+]
+
+[[package]]
+name = "assert2"
+version = "0.3.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0d6c710e60d14b07d8f42d0e702b16120865eea39edb751e75cd6bf401d18f14"
+dependencies = [
+ "assert2-macros",
+ "diff",
+ "yansi",
+]
+
+[[package]]
+name = "assert2-macros"
+version = "0.3.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9008cbbba9e1d655538870b91fd93814bd82e6968f27788fc734375120ac6f57"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "rustc_version",
+ "syn",
 ]
 
 [[package]]
@@ -913,6 +937,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "357703d41365b4b27c590e3ed91eabb1b663f07c4c084095e60cbed4362dff0d"
 
 [[package]]
+name = "rustc_version"
+version = "0.4.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cfcb3a22ef46e85b45de6ee7e79d063319ebb6594faafcf1c225ea92ab6e9b92"
+dependencies = [
+ "semver",
+]
+
+[[package]]
 name = "rustix"
 version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -968,6 +1001,12 @@ dependencies = [
  "core-foundation-sys",
  "libc",
 ]
+
+[[package]]
+name = "semver"
+version = "1.0.27"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d767eb0aabc880b29956c35734170f26ed551a859dbd361d140cdbeca61ab1e2"
 
 [[package]]
 name = "serde"
