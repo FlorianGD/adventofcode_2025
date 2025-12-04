@@ -1,8 +1,10 @@
-pub fn parse_input(input: &str) -> Vec<u8> {
+type Input = Vec<u8>;
+
+pub fn parse_input(input: &str) -> Input {
     vec![0]
 }
 
-pub fn part1(input: Vec<u8>) -> usize {
+pub fn part1(input: Input) -> usize {
     0
 }
 

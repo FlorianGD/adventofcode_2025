@@ -6,6 +6,8 @@ edition = "2024"
 [dependencies]
 anyhow = "1.0.100"
 aoc-next = "0.1.0"
+num = "0.4.3"
+rustc-hash = "2.1.1"
 
 [dev-dependencies]
 indoc = "2.0.7"
